@@ -1,0 +1,37 @@
+@media screen and (min-width: 360px) {
+.home-card {
+    width: auto;
+    height: 255px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    background: rgb(102, 102, 102);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+    img {
+      //visibility: hidden;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    h3 {
+      position: absolute;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      text-shadow: black 1px 0 10px;
+      line-height: 25px;
+      bottom: 20px;
+      left: 20px;
+      max-width: 220px;
+    }
+  }
+}
+
+  @media screen and (max-width: 950px) {
+    .home-card {
+      height: 260px;
+    }
+  }
+  

@@ -1,11 +1,12 @@
 @media screen and (min-width: 360px) {
     .header-div {
+        width: auto;
         padding-bottom: 27px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        gap: 40px;
+        gap: 30px;
         .logo-div {
           width: 50%;
           img {
@@ -16,8 +17,10 @@
             width: 50%;
             ul {
                 text-transform: uppercase;
+                text-wrap: nowrap;
                 width: 100%;
                 display: flex;
+                justify-content: flex-end;
                 gap: 26px;
                 color: black;
                 .nav-link {
@@ -34,34 +37,3 @@
         
       }
 }
-
-/*@media screen and (min-width: 768px) {
-    .header-div {
-      width: 100%;
-      justify-content: space-around;
-      .logo-div {
-        width: 30%;
-        img {
-          width: 165px;
-        }
-      }
-      .nav-div {
-        width: 30%;
-        flex-direction: row-reverse;
-        ul {
-          padding: 0;
-          .nav-link {
-            font-size: 18px;
-          }
-        }
-      }
-      nav ul a:nth-child(1) {
-        margin-right: 12px;
-      }
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    
-}
-*/
