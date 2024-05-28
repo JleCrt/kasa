@@ -1,0 +1,75 @@
+.collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    .collapse-title {
+      color: white;
+      background: #ff6060;
+      border-radius: 5px;
+      height: 35px;
+      width: 100%;
+      padding: 10px 0 10px 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      h3 {
+        font-weight: 700;
+        font-size: 0.875rem;
+        color: #ffffff;
+        margin-left: 18px;
+      }
+      .arrowDown {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        transform: rotate(180deg);
+      }
+      .arrowUp {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        transform: rotate(0deg);
+      }
+    }
+    .collapse-content {
+      background: #f7f7f7;
+      border-radius: 0 0 5px 5px;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: -5px;
+      margin-bottom: 20px;
+      p {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.563rem;
+        color: black;
+        padding: 20px;
+      }
+     ul {
+        list-style: none;
+        font-weight: 300;
+        font-size: 0.875rem;
+        padding: 20px;
+        line-height: 1.25rem;
+      }
+    }
+    .collapse-content-hidden {
+      display: none;
+      margin-bottom: 0;
+      height: 0;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+  .collapse {
+    margin: 30px 0;
+  }
+}

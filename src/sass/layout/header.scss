@@ -26,14 +26,29 @@
                 .nav-link {
                     text-decoration-line: none;
                     color: black;
-                    font-size: 12px;
+                    font-size: 0.75rem;
                     font-weight: 500;
-                    &:hover {
-                        text-decoration-line: underline;
-                    }
+                }
+                .active-link {
+                  text-decoration: underline;
                 }
             }
         }
         
       }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-div {
+    margin: 40px 60px 0 60px;
+    padding: 0;
+    .nav-div {
+      ul {
+        text-transform: none;
+        .nav-link {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }

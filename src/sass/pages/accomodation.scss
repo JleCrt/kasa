@@ -1,0 +1,173 @@
+@media screen and (min-width: 360px) {
+    .accomodation-div {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .infos-container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .accomodation {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-top: 10px;
+        .accomodation-header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            .accomodation-title {
+                color: #ff6060;
+                font-size: 1.125rem;
+                line-height: 1.56rem;
+            }
+            .accomodation-location {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
+    .accomodation-tags {
+        width: auto;
+        .tags {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            .accomodation-tag {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ff6060;
+                border-radius: 5px;
+                white-space: nowrap;
+                color: white;
+                height: 18px;
+                width: auto;
+                padding: 0 15px;
+                line-height: 0.875rem;
+                font-size: 0.75rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .user {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .accomodation-host {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            p {
+                color: #ff6060;
+                text-align: right;
+                display: flex;
+                align-items: center;
+                width: 93px;
+                font-size: 0.875rem;
+                line-height: 1.063rem;
+            }
+            img {
+                width: 36px;
+                height: 36px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .accomodation-stars {
+        width: 100%;
+        position: relative;
+        padding-top: 20px;
+    }
+    .collapse-container {
+        width: auto;
+        .collapse-description {
+            width: 100%;
+        }
+    }
+    .filled-star {
+        fill: #FF6060;
+      }
+      
+      .empty-star {
+        fill: #E3E3E3;
+      }
+}
+
+@media screen and (min-width: 768px) {
+    .collapse-container {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        .collapse-description {
+            width: 50%;
+        }
+        .collapse-equipment {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .accomodation-div {
+        margin: 50px 60px;
+        padding: 0;
+        width: auto;
+    }
+    .accomodation {
+        position: relative;
+        padding-top: 20px;
+        .accomodation-header {
+            .accomodation-title {
+                font-size: 1.75rem;
+                line-height: 3.125rem;
+            }
+        }
+    }
+    .accomodation-tags {
+        padding-top: 10px;
+    }
+    .user {
+        .accomodation-host {
+            position: absolute;
+            bottom: 164px;
+            p {
+                font-size: 1rem;
+            }
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+    .accomodation-stars {
+        .empty-star-container {
+            position: absolute;
+            right: 2px;
+            top: -40px;
+            .star {
+                width: 160px;
+                height: 36px;
+            }
+        }
+    }
+    .collapse-container {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        .collapse-description {
+            width: 50%;
+        }
+        .collapse-equipment {
+            width: 50%;
+        }
+    }
+}

@@ -9,12 +9,12 @@
     color: #ff6060;
       .error-number {
         padding: 113px 0;
-        font-size: 96px;
+        font-size: 6rem;
         font-weight: 700;
         margin: 0;
       }
       .error-text {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 500;
         line-height: 143%;
         text-align: center;
@@ -23,9 +23,25 @@
     }
     .error-link {
         color: black;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         padding: 113px 0;
     }
   
+}
+
+@media screen and (min-width: 768px) {
+  .error {
+      .error-number {
+        font-size: 140px;
+      }
+  }
+}
+
+@media screen and (min-width:1024px) {
+.error {
+  .error-number {
+    font-size: 220px;
+  }
+  }
 }
