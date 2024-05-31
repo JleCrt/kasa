@@ -1,7 +1,9 @@
+@use './utils/variables.scss';
+
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
   font-size: 16px;
 }
 
@@ -10,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  font-family: "Montserrat";
+  font-family: variables.$font_primary;
 }
 
 .home-div {

@@ -1,29 +1,32 @@
-@media screen and (min-width: 360px) {
+@use '../utils/mixins.scss';
+@use '../utils/variables.scss';
+
+@include mixins.mobile-first {
     .footer-div {
-        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         width: 100%;
         height: 209px;
-        overflow: hidden;
         padding: 60px 120px 56px;
+        background-color: variables.$background_black;
+        overflow: hidden;
         p{
+        width: 133px;
+        height: 46px;
+        padding-top: 12px;
         font-size: 0.75rem;
         font-weight: 500;
         text-align: center;
         text-wrap: balance;
         line-height: 1.063rem;
-        color: white;
-        width: 133px;
-        height: 46px;
-        padding-top: 12px;
+        color: variables.$color_primary;
         }  
     }
 }
 
-@media screen and (min-width:768px) {
+@include mixins.tablet {
     .footer-div {
         p{
             width: 100%;

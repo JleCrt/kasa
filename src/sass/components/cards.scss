@@ -1,13 +1,16 @@
-@media screen and (min-width: 360px) {
+@use '../utils/mixins.scss';
+@use '../utils/variables.scss';
+
+@include mixins.mobile-first {
 .home-card {
+    position: relative;
     width: auto;
     height: 255px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
     margin: 20px;
     background: rgb(102, 102, 102);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 10px;
+    overflow: hidden;
     img {
       height: 100%;
       width: 100%;
@@ -16,28 +19,28 @@
     }
     h3 {
       position: absolute;
-      font-weight: 700;
-      font-size: 18px;
-      color: #ffffff;
-      text-shadow: black 1px 0 10px;
-      line-height: 25px;
       bottom: 20px;
       left: 20px;
       max-width: 220px;
+      font-size: 18px;
+      font-weight: 700;
+      text-shadow: black 1px 0 10px;
+      line-height: 25px;
+      color: variables.$color_primary;
     }
   }
 }
 
-  @media screen and (min-width:768px) {
+@include mixins.tablet {
     .home-card {
       height: 260px;
     }
     .home-card-div {
       padding: 0 20px;
     }
-  }
+}
   
-@media screen and (min-width: 1024px) {
+@include mixins.desktop {
   .home-div {
     margin: 50px 0;
   }
@@ -47,9 +50,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0 38px;
-      background-color: #f6f6f6;
-      border-radius: 25px;
       padding: 20px;
+      background-color: variables.$background_card;
+      border-radius: 25px;
+
     }
     }
 }

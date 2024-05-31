@@ -1,11 +1,12 @@
-@media screen and (min-width: 360px) {
+@use '../utils/mixins.scss';
+
+@include mixins.mobile-first {
     .header-div {
-        width: auto;
-        padding-bottom: 27px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        width: auto;
+        padding: 20px 20px 27px;
         gap: 30px;
         .logo-div {
           width: 50%;
@@ -16,18 +17,18 @@
         .nav-div {
             width: 50%;
             ul {
-                text-transform: uppercase;
-                text-wrap: nowrap;
-                width: 100%;
                 display: flex;
                 justify-content: flex-end;
+                width: 100%;
                 gap: 26px;
+                text-transform: uppercase;
+                text-wrap: nowrap;
                 color: black;
                 .nav-link {
-                    text-decoration-line: none;
-                    color: black;
                     font-size: 0.75rem;
                     font-weight: 500;
+                    text-decoration-line: none;
+                    color: black;
                 }
                 .active-link {
                   text-decoration: underline;
@@ -38,7 +39,7 @@
       }
 }
 
-@media screen and (min-width: 1024px) {
+@include mixins.desktop {
   .header-div {
     margin: 40px 60px 0 60px;
     padding: 0;

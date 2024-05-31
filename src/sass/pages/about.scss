@@ -1,17 +1,20 @@
-@media screen and (min-width:360px) {
+@use '../utils/mixins.scss';
+@use '../utils/variables.scss';
+
+@include mixins.mobile-first {
   .about-container {
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
     margin: 0 20px;
     .about-banner {
-      width: 100%;
       height: 111px;
-      background-color: black;
+      width: 100%;
+      margin-top: 20px;
+      background-color: variables.$background_black;
       mix-blend-mode: darken;
       border-radius: 10px;
-      margin-top: 20px;
       img {
         width: 100%;
         height: 100%;
@@ -26,7 +29,7 @@
   }  
 }
 
-@media screen and (min-width: 768px) {
+@include mixins.tablet {
   .about-container {
     .about-banner {
       width: 100%;
@@ -39,7 +42,7 @@
   }
 }
 
-@media screen and (min-width:1024px) {
+@include mixins.desktop {
   .about-container {
     margin: 10px 60px;
     .about-banner {

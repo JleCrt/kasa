@@ -1,17 +1,20 @@
-@media screen and (min-width: 360px) {
+@use '../utils/mixins.scss';
+@use '../utils/variables.scss';
+
+@include mixins.mobile-first {
 .error {
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: auto;
     margin: 0 20px;
-    color: #ff6060;
+    color: variables.$color_tertiary;
       .error-number {
         padding: 113px 0;
+        margin: 0;
         font-size: 6rem;
         font-weight: 700;
-        margin: 0;
       }
       .error-text {
         font-size: 1.125rem;
@@ -22,15 +25,15 @@
       }
     }
     .error-link {
-        color: black;
+        padding: 113px 0;
         font-size: 0.875rem;
         font-weight: 500;
-        padding: 113px 0;
+        color: black;
     }
   
 }
 
-@media screen and (min-width: 768px) {
+@include mixins.tablet {
   .error {
       .error-number {
         font-size: 140px;
@@ -38,7 +41,7 @@
   }
 }
 
-@media screen and (min-width:1024px) {
+@include mixins.desktop {
 .error {
   .error-number {
     font-size: 220px;

@@ -1,0 +1,28 @@
+// MEDIA QUERIES
+
+@mixin mobile-first {
+    @media (min-width: 360px) { @content; }
+}
+
+@mixin tablet { 
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) { @content; }
+}
+
+// ARROW
+
+@mixin arrow_collapse {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+@mixin arrow_slideshow {
+    width: 24px;
+    height: 24px;
+}
