@@ -12,14 +12,11 @@ const Slideshow = (images) => {
   actualImage = pictures[counter];
 
   // Slide à gauche
-  const slideLeft = () => {
-    setCounter((counter - 1 + slideLength) % slideLength);
-  };
+  const slideLeft = () => setCounter((counter - 1 + slideLength) % slideLength);
 
   // Slide à droite
-  const slideRight = () => {
-    setCounter((counter + 1) % slideLength);
-  };
+  const slideRight = () => setCounter((counter + 1) % slideLength);
+
 
   // Condition d'affichage de "arrow-controller-div"
   const shouldDisplayControls = slideLength > 1;

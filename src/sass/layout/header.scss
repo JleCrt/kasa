@@ -1,42 +1,41 @@
 @use '../utils/mixins.scss';
 
 @include mixins.mobile-first {
-    .header-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        padding: 20px 20px 27px;
-        gap: 30px;
-        .logo-div {
-          width: 50%;
-          img {
-            width: 148px;
-          }
-        }
-        .nav-div {
-            width: 50%;
-            ul {
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-                gap: 26px;
-                text-transform: uppercase;
-                text-wrap: nowrap;
-                color: black;
-                .nav-link {
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                    text-decoration-line: none;
-                    color: black;
-                }
-                .active-link {
-                  text-decoration: underline;
-                }
-            }
-        }
-        
+  .header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 20px 20px 27px;
+    gap: 30px;
+    .logo-div {
+      width: 50%;
+      img {
+        width: 148px;
       }
+    }
+  }
+  .header-div .nav-div {
+      width: 50%;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 26px;
+        text-transform: uppercase;
+        text-wrap: nowrap;
+        color: black;
+        .nav-link {
+          font-size: 0.75rem;
+          font-weight: 500;
+          text-decoration-line: none;
+          color: black;
+        }
+        .active-link {
+          text-decoration: underline;
+        }
+      }
+  }
 }
 
 @include mixins.desktop {

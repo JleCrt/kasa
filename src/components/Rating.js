@@ -20,9 +20,7 @@ const Star = ({ filled }) => (
 const Rating = ({ rating }) => (
   <div className="accomodation-stars">
     {/* Tableau + map pour création d'étoiles */}
-    {Array.from({ length: 5 }, (_, i) => (
-      <Star key={i} filled={i < rating} />
-    ))}
+    {Array.from({ length: 5 }, (_, i) => <Star key={i} filled={i < rating} />)}
   </div>
 );
 

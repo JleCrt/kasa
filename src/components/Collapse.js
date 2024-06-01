@@ -6,15 +6,8 @@ import ArrowDown from "../assets/icons/arrow-down.svg";
 const Collapse = ({ state, defaultState = false }) => {
   const [toggle, setToggle] = useState(defaultState);
 
-  // Mise à jour de l'état toggle quand defaultState change
-  useEffect(() => {
-    setToggle(defaultState);
-  }, [defaultState]);
-
   // Inverser la valeur de toggle au clic
-  const toggleHandler = () => {
-    setToggle(!toggle);
-  };
+  const toggleHandler = () => setToggle(!toggle);
 
   return (
     <div className="collapse">
